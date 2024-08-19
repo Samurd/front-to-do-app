@@ -13,7 +13,6 @@ import { User } from "@/interfaces/user/user";
 import { api_url } from "@/constants/api";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
-import { pageHome } from "@/constants/frontend";
 
 interface Props {
   user: User;

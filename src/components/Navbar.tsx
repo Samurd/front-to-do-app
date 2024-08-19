@@ -1,11 +1,13 @@
+"use client"
+
 import React from "react";
 import Link from "next/link";
-import useAuthServer from "@/hooks/useUser-server";
 import { Button } from "./ui/button";
 import { DropMenu } from "./DropMenu";
+import { useAuth } from "@/hooks/useUser";
 
-export async function Navbar() {
-  const { user } = await useAuthServer();
+export function Navbar() {
+  const { user } = useAuth();
 
   if (user) {
     return (

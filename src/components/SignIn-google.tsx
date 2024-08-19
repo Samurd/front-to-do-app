@@ -1,3 +1,4 @@
+import { api_url } from "@/constants/api";
 import { Button } from "./ui/button";
 
 export function SignInGoogle() {
@@ -5,7 +6,7 @@ export function SignInGoogle() {
     <Button variant={"secondary"} className={"w-full"}>
       <a
       className="w-full"
-      href="http://localhost:3000/api/auth/google/login"
+      href={api_url + "/api/auth/google/login"}
     >
       Continue with Google
     </a>
